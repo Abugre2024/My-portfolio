@@ -1,0 +1,166 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 71px;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  color: black;
+}
+
+.nav-items a {
+  color: black;
+}
+
+.hero {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.hero-img {
+  background-image: url(./images/Abu.jpg);
+  background-size: cover;
+  height: 665px;
+  background-position: center;
+  width: 70%;
+}
+
+.hero-info {
+  justify-content: center;
+  align-items: center;
+  width: 599px;
+  height: 665px;
+  background-color: #ffdd00;
+}
+
+.hero-info h1 {
+  justify-items: center;
+  margin-top: 300px;
+}
+.works {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.works1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume p {
+  text-align: center;
+}
+
+.subs {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.form-btn button {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.form-btn input {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.About-us {
+  margin: 5px;
+  width: 25%;
+}
+
+.items {
+  width: 25%;
+  justify-content: space-evenly;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.footer-icons {
+  display: flex;
+  column-gap: 20px;
+}
+.footer-icons i {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  padding: 3rem 0;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+footer input {
+  border: none;
+  padding: 10px 10px;
+  background-color: transparent;
+}
+
+footer button {
+  padding: 0 10px;
+  background-color: rgb(227, 235, 227);
+  color: white;
+  cursor: pointer;
+}
