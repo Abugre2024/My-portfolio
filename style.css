@@ -9,6 +9,10 @@ nav {
   left: 0;
 }
 
+nav h4 {
+  cursor: pointer;
+}
+
 .nav-items {
   display: flex;
   flex-direction: row;
@@ -93,7 +97,7 @@ nav {
 .footer-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: white;
 }
 
@@ -146,10 +150,9 @@ footer h3 {
   margin-bottom: 20px;
 }
 
-.newsletter-input {
-  display: flex;
-  border-radius: 20px;
-  border: 1px solid gray;
+.footer-talk a {
+  background-color: #ffdd00;
+  color: black;
 }
 
 footer input {
@@ -163,4 +166,10 @@ footer button {
   background-color: rgb(227, 235, 227);
   color: white;
   cursor: pointer;
+}
+
+.class-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
