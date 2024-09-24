@@ -74,6 +74,12 @@ nav h4 {
   color: rgb(0, 0, 0);
   line-height: 21.6px;
   text-align: start;
+  cursor: pointer;
+ 
+}
+
+.hero-info button:hover{
+  color: blue;
 }
 
 .works {
