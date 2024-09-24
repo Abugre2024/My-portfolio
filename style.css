@@ -7,10 +7,21 @@ nav {
   position: fixed;
   right: 0;
   left: 0;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.9px);
+  -webkit-backdrop-filter: blur(12.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 nav h4 {
   cursor: pointer;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
 }
 
 .nav-items {
@@ -19,6 +30,7 @@ nav h4 {
   justify-content: space-evenly;
   width: 70%;
   color: black;
+  font-family: sans-serif;
 }
 
 .nav-items a {
@@ -44,38 +56,86 @@ nav h4 {
   width: 599px;
   height: 665px;
   background-color: #ffdd00;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 54px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .hero-info h1 {
   justify-items: center;
-  margin-top: 300px;
+  margin-top: 200px;
+  font-family: sans-serif;
+}
+.hero-info button {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  line-height: 21.6px;
+  text-align: start;
 }
 
 .works {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: sans-serif;
+  /* padding: 6rem 0; */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.works h2 {
+  font-family: sans-serif;
+  margin-bottom: 50px;
+}
+
+.works h5 {
+  margin-bottom: 50px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .works1 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: sans-serif;
 }
-
-.resume {
+.works1 .resume {
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
 }
 
 .resume p {
   text-align: center;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(26, 26, 26);
+  padding-right: 300px;
+  padding-left: 300px;
+  margin-top: 50px;
+  line-height: 40px;
+}
+
+.resume a {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.resume a:hover {
+  color: rgb(255, 221, 0);
 }
 
 .subs {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: sans-serif;
+  padding-top: 50px;
 }
 
 .form-btn {
@@ -83,17 +143,24 @@ nav h4 {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding-top: 50px;
 }
 
 .form-btn button {
   background: black;
   color: white;
   cursor: pointer;
+  font-family: sans-serif;
 }
 
 .form-btn input {
   border: none;
   border-bottom: 2px solid black;
+  font-family: sans-serif;
 }
 
 .footer-items {
@@ -188,7 +255,7 @@ footer h3 {
   background-color: #ffdd00;
   color: black;
   padding: 5px;
-    padding: 14px 25px;
+  padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -221,15 +288,16 @@ footer button {
   background-color: gray;
   border-radius: 5px;
   color: white;
+  line-height: 40px;
 }
 
-.glass .fa{
- margin-bottom: 20px;
+.glass .fa {
+  margin-bottom: 20px;
   font-size: 40px;
   margin-top: 20px;
 }
 
-.explore{
+.explore {
   font-weight: 1000;
   color: white;
 }
@@ -242,9 +310,10 @@ footer button {
   background-color: gray;
   border-radius: 5px;
   color: white;
+  line-height: 40px;
 }
 
-.layer .fa{
+.layer .fa {
   font-size: 40px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -258,9 +327,10 @@ footer button {
   background-color: gray;
   border-radius: 5px;
   color: white;
+  line-height: 40px;
 }
 
-.bulb .fa{
+.bulb .fa {
   font-size: 40px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -274,4 +344,56 @@ footer button {
 .create {
   font-weight: 1000;
   color: white;
+}
+
+.direction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  gap: 50px;
+}
+
+.direction img {
+  width: 100%;
+}
+
+.direction a {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.direction-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.direction-span {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+
+.direction-items p {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(26, 26, 26);
+}
+
+.direction button {
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: #ffe01a;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
 }
