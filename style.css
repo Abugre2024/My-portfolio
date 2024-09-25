@@ -14,6 +14,7 @@ nav {
   backdrop-filter: blur(12.9px);
   -webkit-backdrop-filter: blur(12.9px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 99;
 }
 
 nav h4 {
@@ -60,6 +61,7 @@ nav h4 {
   font-size: 54px;
   font-weight: 900;
   color: rgba(0, 0, 0, 0.8);
+  position: relative;
 }
 
 .hero-info h1 {
@@ -71,15 +73,20 @@ nav h4 {
   font-family: Poppins, Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
-  color: rgb(0, 0, 0);
+  color: #000000;
   line-height: 21.6px;
   text-align: start;
   cursor: pointer;
- 
+  letter-spacing: 7px;
 }
 
-.hero-info button:hover{
+.hero-info button:hover {
   color: blue;
+}
+
+.hero-text {
+  position: absolute;
+  left: -90px;
 }
 
 .works {
@@ -90,6 +97,10 @@ nav h4 {
   /* padding: 6rem 0; */
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.works-text {
+  text-align: center;
 }
 
 .works h2 {
@@ -106,8 +117,12 @@ nav h4 {
 .works1 {
   display: flex;
   flex-direction: column;
-  text-align: center;
+
   font-family: sans-serif;
+}
+
+.works1 h5 {
+  margin-bottom: 30px;
 }
 .works1 .resume {
   display: flex;
@@ -179,18 +194,16 @@ nav h4 {
 
 .About-us {
   height: 350px;
-  /* width: 400px; */
   width: 45%;
-  /* background-color: #ffdd00; */
   margin-right: 50px;
   text-align: justify;
   font-family: sans-serif;
+  line-height: 30px;
 }
 
 .features {
   height: 200px;
   width: 150px;
-  /* width: 15%; */
   margin-right: 50px;
   font-family: sans-serif;
 }
@@ -209,6 +222,19 @@ nav h4 {
   /* width: 20%; */
   font-family: sans-serif;
   text-align: left;
+  line-height: 30px;
+}
+
+.footer-talk h1 {
+  margin-bottom: 25px;
+}
+
+.footer-talk a {
+  margin-top: 30px;
+}
+
+.footer-talk a:hover {
+  color: blue;
 }
 
 .footer-container {
@@ -221,6 +247,8 @@ nav h4 {
   justify-content: center;
   text-align: center;
   color: white;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .items {
